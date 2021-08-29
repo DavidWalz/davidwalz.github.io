@@ -1,1 +1,2 @@
-# davidwalz.github.io
+# Github Page
+Github page using mkdocs-material.
