@@ -1,0 +1,12 @@
+site_name: BAYES Jump
+repo_name: repo
+repo_url: https://github.com/davidwalz/davidwalz.github.io
+
+nav:
+  - Intro: index.md
+
+theme:
+  name: "material"
+  # custom_dir: docs/overrides
+  # logo: assets/logo.png
+  # favicon: assets/logo.png
