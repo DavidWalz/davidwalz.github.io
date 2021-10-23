@@ -1,12 +1,44 @@
-site_name: BAYES Jump
-repo_name: repo
-repo_url: https://github.com/davidwalz/davidwalz.github.io
+site_name: BayesJump
+# repo_name: repo
+# repo_url: https://github.com/davidwalz/davidwalz.github.io
+site_url: https://davidwalz@github.io/
+site_author: David Walz
+site_description: Mapping the space of Bayesian methods
+# site_keywords: statistics, Bayesian methods, optimization, python 
+
+copyright: "Copyright &copy; 2020-2021 David Walz"
 
 nav:
   - Intro: index.md
+  - 2021:
+    - "Example .py post": blog/2021/example.py
+    - blog/2021/move.md
+  - 2020:
+    # - blog/multiobjective-scalarization.ipynb
+    # - blog/multiobjective-metrics.ipynb
+    - blog/2020/gp-kernels.ipynb
+    # - blog/gp-spectral-sampling.ipynb
+    # - blog/bayesopt-acquisitions-single.ipynb
+    # - blog/bayesopt-acquisitions-multi.ipynb
+    # - blog/bayesopt-frameworks.ipynb
+    # - blog/pyrff.ipynb
+    # - blog/pymoo.ipynb
+
+plugins:
+  - search
+  - mkdocs-jupyter
 
 theme:
   name: "material"
+  palette:
+    primary: blue grey
   # custom_dir: docs/overrides
-  # logo: assets/logo.png
-  # favicon: assets/logo.png
+  # logo: assets/favicon.ico
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    # - navigation.tabs
+    # - navigation.top
+    # - header.autohide
+    - search.suggest
+    - search.highlight
