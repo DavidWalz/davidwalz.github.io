@@ -9,20 +9,22 @@ site_description: Mapping the space of Bayesian methods
 copyright: "Copyright &copy; 2020-2021 David Walz"
 
 nav:
-  - Intro: index.md
+  # - Intro: index.md
   - 2021:
-    - "Example .py post": blog/2021/example.py
-    - blog/2021/move.md
+    - "Example .py post": posts/2021/example.py
+    - posts/2021/move.md
   - 2020:
-    # - blog/multiobjective-scalarization.ipynb
-    # - blog/multiobjective-metrics.ipynb
-    - blog/2020/gp-kernels.ipynb
-    # - blog/gp-spectral-sampling.ipynb
-    # - blog/bayesopt-acquisitions-single.ipynb
-    # - blog/bayesopt-acquisitions-multi.ipynb
-    # - blog/bayesopt-frameworks.ipynb
-    # - blog/pyrff.ipynb
-    # - blog/pymoo.ipynb
+    - posts/2020/first-orchard.ipynb
+    - posts/2020/pymoo.ipynb
+    - posts/2020/bayesopt-frameworks.ipynb
+    - posts/2020/bayesopt-acquisitions-single.ipynb
+    - posts/2020/bayesopt-acquisitions-multi.ipynb
+    - posts/2020/multiobjective-scalarization.ipynb
+    - posts/2020/multiobjective-metrics.ipynb
+    - posts/2020/pyrff.ipynb
+    - posts/2020/karuba-junior.ipynb
+    - posts/2020/gp-spectral-sampling.ipynb
+    - posts/2020/gp-kernels.ipynb
 
 plugins:
   - search
@@ -31,9 +33,9 @@ plugins:
 theme:
   name: "material"
   palette:
-    primary: blue grey
+    primary: light blue
   # custom_dir: docs/overrides
-  # logo: assets/favicon.ico
+  logo: assets/favicon.ico
   favicon: assets/favicon.ico
   features:
     - navigation.instant

@@ -7,6 +7,8 @@ That's why I have decided to switch over to mkdocs / mkdocs-material which I'm a
 Through [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter) I'll be able to keep the existing posts in `.ipynb` format. 
 
 ### Todo's
-- [ ] Move all .ipynb files and clean of fastpages-specific magic
+- [x] Move all .ipynb files and clean of fastpages-specific magic
 - [ ] Get the bibliography working, see https://github.com/shyamd/mkdocs-bibtex/
+- [ ] Make a nice intro page
 - [ ] Hide the `In`/`Out` fields inside the notebooks
+- [ ] Adding tags
