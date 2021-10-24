@@ -170,7 +170,9 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="BayesJump" class="md-nav__button md-logo" aria-label="BayesJump" data-md-component="logo">
       
@@ -189,18 +191,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_1">
+      <label class="md-nav__link" for="__nav_2">
         2021
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="2021" data-md-level="1">
-        <label class="md-nav__title" for="__nav_1">
+        <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           2021
         </label>
@@ -249,14 +266,14 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
-      <label class="md-nav__link" for="__nav_2">
+      <label class="md-nav__link" for="__nav_3">
         2020
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="2020" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           2020
         </label>
@@ -502,94 +519,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#illustrative-example" class="md-nav__link">
-    Illustrative example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hypervolume-indicator" class="md-nav__link">
-    Hypervolume indicator
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exclusive-hypervolume-contribution" class="md-nav__link">
-    Exclusive hypervolume contribution
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#crowding-distance" class="md-nav__link">
-    Crowding distance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#epsilon-indicator" class="md-nav__link">
-    Epsilon-indicator
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#generational-distance" class="md-nav__link">
-    Generational distance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inverted-generational-distance" class="md-nav__link">
-    Inverted generational distance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modified-inverted-generational-distance" class="md-nav__link">
-    Modified (inverted) generational distance
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attainment-surface-quantiles" class="md-nav__link">
-    Attainment surface quantiles
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           <div class="md-content" data-md-component="content">
@@ -2045,7 +1974,7 @@ IGD+(A3,R) = 0.086
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "search.suggest", "search.highlight"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "search.suggest", "search.highlight", "toc.integrate"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
