@@ -13,3 +13,4 @@ Through [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter) I'll be ab
 - [x] Hide the `In`/`Out` fields inside the notebooks, see https://github.com/danielfrg/mkdocs-jupyter/issues/30
 - [ ] Collapse jupyter cells, see https://jupytext.readthedocs.io/en/latest/formats.html#metadata-filtering
 - [ ] Adding tags, see https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#adding-a-tags-index
+- [ ] Redo the logo

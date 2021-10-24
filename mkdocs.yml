@@ -42,3 +42,13 @@ theme:
     # - header.autohide
     - search.suggest
     - search.highlight
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DavidWalz
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/walzds
+  analytics:
+    provider: google
+    property: UA-171268636-1
