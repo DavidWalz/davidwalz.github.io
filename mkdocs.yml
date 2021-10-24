@@ -7,7 +7,7 @@ site_description: Mapping the space of Bayesian methods
 copyright: "Copyright &copy; 2020-2021 David Walz"
 
 nav:
-  # - Intro: index.md
+  - About: index.md
   - 2021:
     - "Example .py post": posts/2021/example.py
     - posts/2021/move.md
@@ -42,6 +42,7 @@ theme:
     # - header.autohide
     - search.suggest
     - search.highlight
+    - toc.integrate  # integrate the TOC with the navigation
 
 extra:
   social:
