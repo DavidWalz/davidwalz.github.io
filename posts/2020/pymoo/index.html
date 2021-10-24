@@ -213,7 +213,7 @@
   
     <li class="md-nav__item">
       <a href="../../2021/move/" class="md-nav__link">
-        Moving to mkdocs
+        Moving to MkDocs
       </a>
     </li>
   
@@ -514,6 +514,7 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+
                 
                 
                 <style type="text/css">
@@ -1443,6 +1444,17 @@ However, it will need to be seen if the main developer will continue to maintain
 
                 
               
+
+<style>
+
+/* Remove the `In` and `Out` block in rendered Jupyter notebooks */
+.md-container .jp-Cell-outputWrapper .jp-OutputPrompt.jp-OutputArea-prompt,
+.md-container .jp-Cell-inputWrapper .jp-InputPrompt.jp-InputArea-prompt {
+  display: none;
+}
+
+</style>
+
               
                 
 

@@ -20,7 +20,7 @@
     
     
       
-        <title>Moving to mkdocs - BayesJump</title>
+        <title>Moving to MkDocs - BayesJump</title>
       
     
     
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Moving to mkdocs
+              Moving to MkDocs
             
           </span>
         </div>
@@ -224,12 +224,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Moving to mkdocs
+          Moving to MkDocs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Moving to mkdocs
+        Moving to MkDocs
       </a>
       
         
@@ -248,7 +248,7 @@
       
         <li class="md-nav__item">
   <a href="#todos" class="md-nav__link">
-    Todo's
+    Todos
   </a>
   
 </li>
@@ -456,7 +456,7 @@
       
         <li class="md-nav__item">
   <a href="#todos" class="md-nav__link">
-    Todo's
+    Todos
   </a>
   
 </li>
@@ -472,23 +472,36 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+
                 
                 
-                <h1 id="moving-to-mkdocs">Moving to mkdocs</h1>
+                <h1 id="moving-to-mkdocs">Moving to MkDocs</h1>
 <p>In the past I was using <a href="https://github.com/fastai/fastpages">fastpages</a> for some blogging while on partnal leave with my second daughter. 
 While the looks are certainly amazing, I was unconfortable with the amount of magic going on and the lack of control. 
 That's why I have decided to switch over to mkdocs / mkdocs-material which I'm already using extensively at work.</p>
 <p>Through <a href="https://github.com/danielfrg/mkdocs-jupyter">mkdocs-jupyter</a> I'll be able to keep the existing posts in <code>.ipynb</code> format. </p>
-<h3 id="todos">Todo's</h3>
+<h3 id="todos">Todos</h3>
 <ul>
 <li>[x] Move all .ipynb files and clean of fastpages-specific magic</li>
 <li>[ ] Get the bibliography working, see https://github.com/shyamd/mkdocs-bibtex/</li>
-<li>[ ] Make a nice intro page</li>
-<li>[ ] Hide the <code>In</code>/<code>Out</code> fields inside the notebooks</li>
-<li>[ ] Adding tags</li>
+<li>[ ] Make a nice intro page, see e.g. https://ddrscott.github.io/blog/2018/move-to-mkdocs/</li>
+<li>[x] Hide the <code>In</code>/<code>Out</code> fields inside the notebooks, see https://github.com/danielfrg/mkdocs-jupyter/issues/30</li>
+<li>[ ] Collapse jupyter cells, see https://jupytext.readthedocs.io/en/latest/formats.html#metadata-filtering</li>
+<li>[ ] Adding tags, see https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#adding-a-tags-index</li>
 </ul>
                 
               
+
+<style>
+
+/* Remove the `In` and `Out` block in rendered Jupyter notebooks */
+.md-container .jp-Cell-outputWrapper .jp-OutputPrompt.jp-OutputArea-prompt,
+.md-container .jp-Cell-inputWrapper .jp-InputPrompt.jp-InputArea-prompt {
+  display: none;
+}
+
+</style>
+
               
                 
 
