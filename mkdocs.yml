@@ -2,9 +2,41 @@ site_name: BayesJump
 site_url: https://davidwalz@github.io/
 site_author: David Walz
 site_description: Mapping the space of Bayesian methods
-# site_keywords: statistics, Bayesian methods, optimization, python 
-
+# site_keywords: statistics, Bayesian methods, optimization, python
 copyright: "Copyright &copy; 2020-2021 David Walz"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DavidWalz
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/walzds
+  analytics:
+    provider: google
+    property: UA-171268636-1
+
+theme:
+  name: "material"
+  custom_dir: docs/overrides
+  palette:
+    primary: blue
+  logo: assets/favicon.ico
+  favicon: assets/favicon.ico
+  features:
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - toc.integrate  # integrate TOC in the navigation bar
+
+plugins:
+  - search
+  - mkdocs-jupyter
+
+extra_css:
+  - stylesheets/extra.css
+
+# markdown_extensions:
+#   - attr_list
 
 nav:
   - About: index.md
@@ -23,33 +55,3 @@ nav:
     - posts/2020/karuba-junior.ipynb
     - posts/2020/gp-spectral-sampling.ipynb
     - posts/2020/gp-kernels.ipynb
-
-plugins:
-  - search
-  - mkdocs-jupyter
-
-theme:
-  name: "material"
-  custom_dir: docs/overrides
-  palette:
-    primary: light blue
-  logo: assets/favicon.ico
-  favicon: assets/favicon.ico
-  features:
-    - navigation.instant
-    # - navigation.tabs
-    # - navigation.top
-    # - header.autohide
-    - search.suggest
-    - search.highlight
-    - toc.integrate  # integrate the TOC with the navigation
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/DavidWalz
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/walzds
-  analytics:
-    provider: google
-    property: UA-171268636-1

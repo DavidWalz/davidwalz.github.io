@@ -3,26 +3,6 @@
 BayesJump is a collection of posts and projects around statistics, optimization, visualization and python and game playing.
 In particular I'm interested in decision support (including visual and psychological aspects) and automated decision making under uncertainty. 
 
-<table>
-  <tc>
-    <td>
-        Bayesian Optmizization
-        <img src="images/bayesopt.png" height=270>
-    </td>
-    <td>
-        Multiobjective optimization
-        <img src="images/scalarization.png" height=270>
-    </td>
-    <td>
-        .
-        <img src="images/hypervolume.png" height=270>
-    </td>    
-  </tc>
- </table>
-
-
-## Topics
-
 ### Mathematical optimization
 * [Performance metrics in multiobjective optimization](posts/2020/multiobjective-metrics.ipynb)
 * [Scalarization methods in multiobjective optimization](posts/2020/multiobjective-scalarization.ipynb)
@@ -37,7 +17,5 @@ In particular I'm interested in decision support (including visual and psycholog
 * [pyrff](posts/2020/pyrff.ipynb)
 
 ### Stats in kids games
-* [First orchard](posts/2020/first-orchard.ipynb)
-* [Karuba Junior](posts/2020/karuba-junior.ipynb)
-
-
+[![](/images/karuba.jpg#thumbnail)](posts/2020/karuba-junior.ipynb)
+[![](/images/first-orchard.jpg#thumbnail)](posts/2020/first-orchard.ipynb)
