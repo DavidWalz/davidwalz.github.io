@@ -31,7 +31,7 @@
         
           
           
-          <meta name="theme-color" content="#02a6f2">
+          <meta name="theme-color" content="#2094f3">
         
       
     
@@ -45,6 +45,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     
       
@@ -71,7 +73,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -389,39 +391,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Karuba Junior
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Karuba Junior
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#implementation" class="md-nav__link">
-    Implementation
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -973,28 +945,22 @@ all of MD as it is not optimized for dense, information rich UIs.
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="karuba-junior">Karuba Junior<a class="anchor-link" href="#Karuba-Junior">&#182;</a></h1><blockquote><p>Calculating the odds of winning a cooperative children's game.</p>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><a href="https://www.boardgamegeek.com/boardgame/234439/karuba-junior">Karuba Junior</a> is a cooperative tile-placement adventure game.
+<h1 id="karuba-junior">Karuba Junior<a class="anchor-link" href="#Karuba-Junior">&#182;</a></h1><p><a href="https://www.boardgamegeek.com/boardgame/234439/karuba-junior">Karuba Junior</a> is a cooperative tile-placement adventure game.
 Having lost twice in a row I wanted to calculate the odds of winning this game.</p>
+<p><img src="/images/karuba.jpg#medium" alt=""></p>
 <p>As expected for a child games the rules are dead simple. 
 The players take turns in drawing a card and using it to extend or end one of the 4 starting roads.
 Tigers and treasures end a road.
 Forks and crossroads add one and two additional roads, respectively, as long as they are placed in such a way that none of the roads are blocked by another card, which in practice is always possible.
 The game is won if all 3 treasures are found.
 The game is lost if there is no open road left, or if the pirates advanced a total of 9 fields, which happens by drawing the corresponding pirate cards.</p>
-<p>Let's find the odds of winning the game through Monte Carlo.</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="implementation">Implementation<a class="anchor-link" href="#Implementation">&#182;</a></h3><p>We need 3 counters: the number of treasures found, the number of open roads, and the number of pirate moves.
+<p>Let's find the odds of winning the game through Monte Carlo. 
+We need 3 counters: the number of treasures found, the number of open roads, and the number of pirate moves.
 For each card we define how the counters change in form of a 3-component vector. 
 Then we can accumulate the changes in the random order they are drawn and determine which win/loss condition occurs first.</p>
 <p>There are 28 cards:</p>

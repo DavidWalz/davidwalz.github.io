@@ -31,7 +31,7 @@
         
           
           
-          <meta name="theme-color" content="#02a6f2">
+          <meta name="theme-color" content="#2094f3">
         
       
     
@@ -45,6 +45,8 @@
       
     
     
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
     
       
@@ -71,7 +73,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -943,25 +945,19 @@ all of MD as it is not optimized for dense, information rich UIs.
     <!-- End of mathjax configuration --><div class="jupyter-wrapper">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="first-orchard">First Orchard<a class="anchor-link" href="#First-Orchard">&#182;</a></h1><blockquote><p>Calculating the effect of optimal play in a children's game with numba.</p>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>First Orchard is simplified version of the children's board game "Orchard" and is meant as a first game for ages 2+.
+<h1 id="first-orchard">First Orchard<a class="anchor-link" href="#First-Orchard">&#182;</a></h1><p>First Orchard is simplified version of the children's board game "Orchard" and is meant as a first game for ages 2+.
 The goal of this cooperative game is to collect all 4 fruits from each of 4 fruit trees (red apples, green apples, yellow pears and blue plums) before a crow arrives at the orchard to steal the fruits.
 Players take turns to roll a 6-sided dice with the faces showing the 4 different fruit colors, the crow and a fruit basket.
 When rolling a color, a fruit of the corresponding type can be collected if there is still one remaining.
 When rolling the basket, the player can choose to pick any of the remaining fruits.
 When rolling the crow, the crow advances one step. 
 The game is lost if the crow advanced a total of 6 steps before all fruits are collected.</p>
+<p><img src="/images/first-orchard.jpg#medium" alt=""></p>
 <p>There are children's games that proceed without any decisions by the players.
-First Orchard does have one strategic element which is the choice of the fruit when rolling the basket. 
+First Orchard does have one strategic element, which is the choice of the fruit when rolling the basket. 
 For optimal play one should always take the fruit type, of which the most fruits remain, so that the chance of rolling a completely harvested fruit is minimized. 
-For the lowest win probability, one can do the opposite by trying to completely strip of one fruit tree before moving to the next.</p>
-<p>From experience it's rather futile to explain to a 2-year-old why the latter is not a good strategy, so I wanted to at least know how big the impact is on the win probability.</p>
+For the lowest win probability, one can do the opposite by trying to completely strip of one fruit tree before moving to the next. 
+From experience it's rather futile to explain to a 2-year-old why the latter is not a good strategy, so I wanted to at least know how big the impact is on the win probability.</p>
 <p>As this game produces a variable length random sequence, there is no elegant way of vectorizing the calculation. Instead, we simply write out the logic and jit-compile with numba.</p>
 
 </div>
@@ -1058,7 +1054,7 @@ For the lowest win probability, one can do the opposite by trying to completely 
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The worst play leads to 7% lower win probility. Any other possible strategy you will land us in between. So now we know.</p>
+<p>The worst play leads to 7% lower win probility. Any possible strategy will land us in between. So now we know.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
