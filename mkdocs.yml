@@ -35,8 +35,8 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-# markdown_extensions:
-#   - attr_list
+markdown_extensions:
+  - pymdownx.tasklist
 
 nav:
   - About: index.md
