@@ -16,6 +16,11 @@ In particular I'm interested in decision support (including visual and psycholog
 * [BayesOpt frameworks](posts/2020/bayesopt-frameworks.ipynb)
 * [pyrff](posts/2020/pyrff.ipynb)
 
+### Python packages
+[![](/images/formulaic.png#thumbnail)](posts/2021/wilkinson.ipynb)
+[![](/images/pymoo.png#thumbnail)](posts/2020/pymoo.ipynb)
+[![](/images/python.png#thumbnail)](posts/2020/pyrff.ipynb)
+
 ### Stats in kids games
 [![](/images/karuba.jpg#thumbnail)](posts/2020/karuba-junior.ipynb)
 [![](/images/first-orchard.jpg#thumbnail)](posts/2020/first-orchard.ipynb)

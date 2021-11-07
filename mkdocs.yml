@@ -41,6 +41,7 @@ markdown_extensions:
 nav:
   - About: index.md
   - 2021:
+    - posts/2021/wilkinson.ipynb
     - "Example .py post": posts/2021/example.py
     - posts/2021/move.md
   - 2020:
