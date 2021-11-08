@@ -20,8 +20,8 @@ theme:
   custom_dir: docs/overrides
   palette:
     primary: blue
-  logo: assets/favicon.ico
-  favicon: assets/favicon.ico
+  logo: images/favicon.ico
+  favicon: images/favicon.ico
   features:
     - navigation.instant
     - search.suggest
