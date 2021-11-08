@@ -15,7 +15,7 @@
       
         <link rel="canonical" href="https://davidwalz@github.io/posts/2021/wilkinson/">
       
-      <link rel="icon" href="../../../assets/favicon.ico">
+      <link rel="icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
@@ -97,7 +97,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="BayesJump" class="md-header__button md-logo" aria-label="BayesJump" data-md-component="logo">
       
-  <img src="../../../assets/favicon.ico" alt="logo">
+  <img src="../../../images/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -178,7 +178,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="BayesJump" class="md-nav__button md-logo" aria-label="BayesJump" data-md-component="logo">
       
-  <img src="../../../assets/favicon.ico" alt="logo">
+  <img src="../../../images/favicon.ico" alt="logo">
 
     </a>
     BayesJump
@@ -1063,7 +1063,6 @@ For example <code>statsmodels</code> is planning to <a href="https://github.com/
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="the-notation">The notation<a class="anchor-link" href="#The-notation">&#182;</a></h2><p>Wilkinson notation is best shown by example.
-Given a set of variables <code>x1</code>, <code>x2</code>, ... <code>xn</code> and <code>y</code>.
 With <code>y ~ x1 + x2 + x3</code> we specify that <code>y</code> is modeled by a linear combination of the independent variables <code>x1</code>, <code>x2</code>, <code>x3</code>.
 Note, that an intercept term is implicitly added.</p>
 
@@ -1157,8 +1156,8 @@ Note, that an intercept term is implicitly added.</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Interactions between variables are denoted with the colon operator, e.g. <code>x1:x2</code> means that a $x_1 \cdot x_2$ is added to the model.
-Adding all pairwise interactions can be done by writing it out <code>x1 + x2 + x3 + x1:x2 + x1:x3 + x2:x3</code> or in a more convenient way using <code>(x1 + x2 + x3)**2</code>, where the -<code>**2</code> is meant as 2-way interactions, not as a square.</p>
+<p>Interactions between variables are denoted with the colon operator, e.g. <code>x1:x2</code> means that a $x_1 \cdot x_2$ term is added to the model.
+Adding all pairwise interactions can be done by writing it out <code>x1 + x2 + x3 + x1:x2 + x1:x3 + x2:x3</code> or in a more convenient way using <code>(x1 + x2 + x3)**2</code>, where the <code>**2</code> is meant as 2-way interactions, not as a square.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">

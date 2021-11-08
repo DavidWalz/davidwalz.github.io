@@ -15,7 +15,7 @@
       
         <link rel="canonical" href="https://davidwalz@github.io/posts/2021/move/">
       
-      <link rel="icon" href="../../../assets/favicon.ico">
+      <link rel="icon" href="../../../images/favicon.ico">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
@@ -97,7 +97,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="BayesJump" class="md-header__button md-logo" aria-label="BayesJump" data-md-component="logo">
       
-  <img src="../../../assets/favicon.ico" alt="logo">
+  <img src="../../../images/favicon.ico" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -178,7 +178,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="BayesJump" class="md-nav__button md-logo" aria-label="BayesJump" data-md-component="logo">
       
-  <img src="../../../assets/favicon.ico" alt="logo">
+  <img src="../../../images/favicon.ico" alt="logo">
 
     </a>
     BayesJump
@@ -490,15 +490,18 @@
 While the looks are certainly amazing, I was unconfortable with the amount of magic going on and the lack of control. 
 That's why I have decided to switch over to mkdocs / mkdocs-material which I'm already using extensively at work.</p>
 <p>Through <a href="https://github.com/danielfrg/mkdocs-jupyter">mkdocs-jupyter</a> I'll be able to keep the existing posts in <code>.ipynb</code> format. </p>
+<p>With <a href="https://github.com/shyamd/mkdocs-bibtex/">mkdocs-bibtex</a> I will be able to keep the current bibliograpy, but will have to modify the citation style from <code>{% cite XYZ %}</code> to <code>[@XYZ]</code>.</p>
+<p>I'm really missing the graphical overview of the landing page in fastpages which shows the latest posts in order together with the headline and optional a graphic. See <a href="(https://fastpages.fast.ai/)">here</a> for an example.
+Placing and styling images is surprisingly difficult in markdown.
+I spent quite some time searching for ways to implement this without customizing the mkdocs theme, without success so far.</p>
 <h3 id="todos">Todos</h3>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled checked/> Move all .ipynb files and clean of fastpages-specific magic</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Get the bibliography working, see https://github.com/shyamd/mkdocs-bibtex/</li>
-<li class="task-list-item"><input type="checkbox" disabled checked/> Make a nice intro page, see e.g. https://ddrscott.github.io/blog/2018/move-to-mkdocs/</li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> Make a (nice) intro page, see e.g. https://ddrscott.github.io/blog/2018/move-to-mkdocs/</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Hide the <code>In</code>/<code>Out</code> fields inside the notebooks, see https://github.com/danielfrg/mkdocs-jupyter/issues/30</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Collapse jupyter cells, see https://jupytext.readthedocs.io/en/latest/formats.html#metadata-filtering</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Adding tags, see https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#adding-a-tags-index</li>
-<li class="task-list-item"><input type="checkbox" disabled/> Redo the logo</li>
 </ul>
                 
               
