@@ -19,7 +19,7 @@ In particular I'm interested in decision support (including visual and psycholog
 ### Python packages
 [![](/images/formulaic.png#thumbnail)](posts/2021/wilkinson.ipynb)
 [![](/images/pymoo.png#thumbnail)](posts/2020/pymoo.ipynb)
-[![](/images/python.png#thumbnail)](posts/2020/pyrff.ipynb)
+[![](/images/pyrff.png#thumbnail)](posts/2020/pyrff.ipynb)
 
 ### Stats in kids games
 [![](/images/karuba.jpg#thumbnail)](posts/2020/karuba-junior.ipynb)
