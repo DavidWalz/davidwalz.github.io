@@ -31,16 +31,21 @@ theme:
 plugins:
   - search
   - mkdocs-jupyter
+  - bibtex:  # https://github.com/shyamd/mkdocs-bibtex/
+      bib_file: "docs/references.bib"
+      cite_style: "pandoc"
 
 extra_css:
   - stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.tasklist
+  - footnotes  # bibtex
 
 nav:
   - About: index.md
   - 2021:
+    - posts/2021/cubist.ipynb
     - posts/2021/wilkinson.ipynb
     - "Example .py post": posts/2021/example.py
     - posts/2021/move.md
