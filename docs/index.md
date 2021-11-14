@@ -3,6 +3,17 @@
 BayesJump is a collection of posts and projects around statistics, optimization, visualization and python and game playing.
 In particular I'm interested in decision support (including visual and psychological aspects) and automated decision making under uncertainty. 
 
+### Python packages
+[![](/images/formulaic.png#thumbnail)](posts/2021/wilkinson.ipynb)
+[![](/images/pymoo.png#thumbnail)](posts/2020/pymoo.ipynb)
+
+* [pyrff](posts/2020/pyrff.ipynb)
+* [cubist](posts/2021/cubist.ipynb)
+
+### Stats in kids games
+[![](/images/karuba.jpg#thumbnail)](posts/2020/karuba-junior.ipynb)
+[![](/images/first-orchard.jpg#thumbnail)](posts/2020/first-orchard.ipynb)
+
 ### Mathematical optimization
 * [Performance metrics in multiobjective optimization](posts/2020/multiobjective-metrics.ipynb)
 * [Scalarization methods in multiobjective optimization](posts/2020/multiobjective-scalarization.ipynb)
@@ -15,12 +26,3 @@ In particular I'm interested in decision support (including visual and psycholog
 * [Spectral sampling from a Gaussian process](posts/2020/gp-spectral-sampling.ipynb)
 * [BayesOpt frameworks](posts/2020/bayesopt-frameworks.ipynb)
 * [pyrff](posts/2020/pyrff.ipynb)
-
-### Python packages
-[![](/images/formulaic.png#thumbnail)](posts/2021/wilkinson.ipynb)
-[![](/images/pymoo.png#thumbnail)](posts/2020/pymoo.ipynb)
-[![](/images/pyrff.png#thumbnail)](posts/2020/pyrff.ipynb)
-
-### Stats in kids games
-[![](/images/karuba.jpg#thumbnail)](posts/2020/karuba-junior.ipynb)
-[![](/images/first-orchard.jpg#thumbnail)](posts/2020/first-orchard.ipynb)
