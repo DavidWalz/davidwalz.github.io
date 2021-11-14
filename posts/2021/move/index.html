@@ -232,6 +232,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../cubist/" class="md-nav__link">
+        Cubist
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../wilkinson/" class="md-nav__link">
         Wilkinson formulas and Formulaic
       </a>
@@ -291,6 +303,13 @@
         <li class="md-nav__item">
   <a href="#todos" class="md-nav__link">
     Todos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
   </a>
   
 </li>
@@ -490,7 +509,10 @@
 While the looks are certainly amazing, I was unconfortable with the amount of magic going on and the lack of control. 
 That's why I have decided to switch over to mkdocs / mkdocs-material which I'm already using extensively at work.</p>
 <p>Through <a href="https://github.com/danielfrg/mkdocs-jupyter">mkdocs-jupyter</a> I'll be able to keep the existing posts in <code>.ipynb</code> format. </p>
-<p>With <a href="https://github.com/shyamd/mkdocs-bibtex/">mkdocs-bibtex</a> I will be able to keep the current bibliograpy, but will have to modify the citation style from <code>{% cite XYZ %}</code> to <code>[@XYZ]</code>.</p>
+<p>With <a href="https://github.com/shyamd/mkdocs-bibtex/">mkdocs-bibtex</a> I will be able to keep the current bibliograpy, but will have to modify the citation style from <code>{% cite XYZ %}</code> to <code>[@XYZ]</code>.
+See <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> for an example.
+This works in markdown files, but not in jupyter notebooks.#
+Let's see what can be done here short of switching from mkdocs to jupyter-book.</p>
 <p>I'm really missing the graphical overview of the landing page in fastpages which shows the latest posts in order together with the headline and optional a graphic. See <a href="(https://fastpages.fast.ai/)">here</a> for an example.
 Placing and styling images is surprisingly difficult in markdown.
 I spent quite some time searching for ways to implement this without customizing the mkdocs theme, without success so far.</p>
@@ -503,6 +525,15 @@ I spent quite some time searching for ways to implement this without customizing
 <li class="task-list-item"><input type="checkbox" disabled/> Collapse jupyter cells, see https://jupytext.readthedocs.io/en/latest/formats.html#metadata-filtering</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Adding tags, see https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/#adding-a-tags-index</li>
 </ul>
+<h3 id="references">References</h3>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Adriana Schulz, Harrison Wang, Eitan Grinspun, Justin Solomon, and Wojciech Matusik. Interactive exploration of design trade-offs. <em>ACM Trans. Graph.</em>, July 2018. URL: <a href="https://doi.org/10.1145/3197517.3201385">https://doi.org/10.1145/3197517.3201385</a>, <a href="https://doi.org/10.1145/3197517.3201385">doi:10.1145/3197517.3201385</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
 

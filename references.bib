@@ -1,13 +1,3 @@
-@generic{Shahriari2016,
-   abstract = {Big data applications are typically associated with systems involving large numbers of users, massive complex software systems, and large-scale heterogeneous computing and storage architectures. The construction of such systems involves many distributed design choices. The end products (e.g., rec-ommendation systems, medical analysis tools, real-time game engines, speech recognizers) thus involves many tunable config-uration parameters. These parameters are often specified and hard-coded into the software by various developers or teams. If optimized jointly, these parameters can result in significant improvements. Bayesian optimization is a powerful tool for the joint optimization of design choices that is gaining great popularity in recent years. It promises greater automation so as to increase both product quality and human productivity. This review paper introduces Bayesian optimization, highlights some of its methodological aspects, and showcases a wide range of applications.},
-   author = {Bobak Shahriari and Kevin Swersky and Ziyu Wang and Ryan P. Adams and Nando De Freitas},
-   doi = {10.1109/JPROC.2015.2494218},
-   issn = {00189219},
-   journal = {Proceedings of the IEEE},
-   keywords = {decision making,design of experiments,genomic medicine,optimization,response surface methodology,statistical learning},
-   title = {Taking the human out of the loop: A review of Bayesian optimization},
-   year = {2016},
-}
 @article{Swersky2013,
    abstract = {Bayesian optimization has recently been proposed as a framework for automati- cally tuning the hyperparameters of machine learning models and has been shown to yield state-of-the-art performance with impressive ease and efficiency. In this paper, we explore whether it is possible to transfer the knowledge gained from previous optimizations to new tasks in order to find optimal hyperparameter set- tings more efficiently. Our approach is based on extending multi-task Gaussian processes to the framework of Bayesian optimization. We show that this method significantly speeds up the optimization process when compared to the standard single-task approach. We further propose a straightforward extension of our al- gorithm in order to jointly minimize the average error across multiple tasks and demonstrate how this can be used to greatly speed up k-fold cross-validation. Lastly, we propose an adaptation of a recently developed acquisition function, en- tropy search, to the cost-sensitive, multi-task setting. We demonstrate the utility of this new acquisition function by leveraging a small dataset to explore hyper- parameter settings for a large dataset. Our algorithm dynamically chooses which dataset to query in order to yield the most information per unit cost.},
    author = {Kevin Swersky and Jasper Snoek and Ryan P. Adams},
@@ -17,7 +7,7 @@
    year = {2013},
 }
 @inproceedings{Springenberg2016,
-   abstract = {© 2016 NIPS Foundation - All Rights Reserved. Bayesian optimization is a prominent method for optimizing expensive-to-evaluate black-box functions that is widely applied to tuning the hyperparameters of machine learning algorithms. Despite its successes, the prototypical Bayesian optimization approach - using Gaussian process models - does not scale well to either many hyperparameters or many function evaluations. Attacking this lack of scalability and flexibility is thus one of the key challenges of the field. We present a general approach for using flexible parametric models (neural networks) for Bayesian optimization, staying as close to a truly Bayesian treatment as possible. We obtain scalability through stochastic gradient Hamiltonian Monte Carlo, whose robustness we improve via a scale adaptation. Experiments including multi-task Bayesian optimization with 21 tasks, parallel optimization of deep neural networks and deep reinforcement learning show the power and flexibility of this approach.},
+   abstract = {Bayesian optimization is a prominent method for optimizing expensive-to-evaluate black-box functions that is widely applied to tuning the hyperparameters of machine learning algorithms. Despite its successes, the prototypical Bayesian optimization approach - using Gaussian process models - does not scale well to either many hyperparameters or many function evaluations. Attacking this lack of scalability and flexibility is thus one of the key challenges of the field. We present a general approach for using flexible parametric models (neural networks) for Bayesian optimization, staying as close to a truly Bayesian treatment as possible. We obtain scalability through stochastic gradient Hamiltonian Monte Carlo, whose robustness we improve via a scale adaptation. Experiments including multi-task Bayesian optimization with 21 tasks, parallel optimization of deep neural networks and deep reinforcement learning show the power and flexibility of this approach.},
    author = {J.T. Springenberg and A. Klein and S. Falkner and F. Hutter},
    issn = {10495258},
    journal = {Advances in Neural Information Processing Systems},
@@ -25,11 +15,10 @@
    year = {2016},
 }
 @book_section{Frazier2018,
-   abstract = {Suppose we have a function f : X → R that we with to minimize on some domain X ⊆ X . That is, we wish to x * = arg min x∈X f (x). In numerical analysis, this problem is typically called (global) optimization and has been the subject of decades of study. We draw a distinction between global optimization, where we seek the absolute optimum in X, and local optimization, where we seek to a local optimum in the neighborhood of a given initial point x 0 . A common approach to optimization problems is to make some assumptions about f . For example, when the objective function f is known to be convex and the domain X is also convex, the problem is known as convex optimization and has been widely studied. Convex optimization is a common tool used across machine learning. If an exact functional form for f is not available (that is, f behaves as a " black box "), what can we do? Bayesian optimization proceeds by maintaining a probabilistic belief about f and designing a so-called acquisition function to determine where to evaluate the function next. Bayesian optimization is particularly well-suited to global optimization problems where f is an expensive black-box function; for example, evaluating f might require running an expensive simulation. Bayesian optimization has recently become popular for training expensive machine-learning models whose behavior depend in a complicated way on their parameters (e.g., convolutional neural networks). This is an example of the " AutoML " paradigm. Although not strictly required, Bayesian optimization almost always reasons about f by choosing an appropriate Gaussian process prior:},
+   title = {Bayesian Optimization},
    author = {Peter I. Frazier},
    doi = {10.1287/educ.2018.0188},
    journal = {Recent Advances in Optimization and Modeling of Contemporary Problems},
-   title = {Bayesian Optimization},
    year = {2018},
 }
 @book_section{Laumanns2002,
@@ -50,7 +39,7 @@
    year = {2016},
 }
 @article{Bergstra2013,
-   abstract = {Sequential model-based optimization (also known as Bayesian op- timization) is one of the most efficient methods (per function evaluation) of function minimization. This efficiency makes it appropriate for optimizing the hyperparameters of machine learning algorithms that are slow to train. The Hyperopt library provides algorithms and parallelization infrastructure for per- forming hyperparameter optimization (model selection) in Python. This paper presents an introductory tutorial on the usage of the Hyperopt library, including the description of search spaces, minimization (in serial and parallel), and the analysis of the results collected in the course of minimization. The paper closes with some discussion of ongoing and future work.},
+   abstract = {Sequential model-based optimization (also known as Bayesian optimization) is one of the most efficient methods (per function evaluation) of function minimization. This efficiency makes it appropriate for optimizing the hyperparameters of machine learning algorithms that are slow to train. The Hyperopt library provides algorithms and parallelization infrastructure for per- forming hyperparameter optimization (model selection) in Python. This paper presents an introductory tutorial on the usage of the Hyperopt library, including the description of search spaces, minimization (in serial and parallel), and the analysis of the results collected in the course of minimization. The paper closes with some discussion of ongoing and future work.},
    author = {James Bergstra and Dan Yamins and David D Cox},
    journal = {12th PYTHON IN SCIENCE CONF. (SCIPY 2013)},
    title = {Hyperopt: A python library for optimizing the hyperparameters of machine learning algorithms},
@@ -292,20 +281,6 @@
    volume = {1},
    year = {2016},
 }
-@article{Frazier2009,
-   abstract = {We consider a Bayesian ranking and selection problem with independent normal rewards and a correlated multivariate normal belief on the mean values of these rewards. Because this formulation of the ranking and selection problem models dependence between alternatives' mean values, algorithms may use this dependence to perform efficiently even when the number of alternatives is very large. We propose a fully sequential sampling policy called the knowledge-gradient policy, which is provably optimal in some special cases and has bounded suboptimality in all others. We then demonstrate how this policy may be applied to efficiently maximize a continuous function on a continuous domain while constrained to a fixed number of noisy measurements. © 2009 Informs.},
-   author = {Peter Frazier and Warren Powell and Savas Dayanik},
-   doi = {10.1287/ijoc.1080.0314},
-   issn = {10919856},
-   issue = {4},
-   journal = {INFORMS Journal on Computing},
-   keywords = {Bayesian,Decision analysis: sequential,Simulation: design of experiments,Statistics},
-   month = {9},
-   pages = {599-613},
-   title = {The knowledge-gradient policy for correlated normal beliefs},
-   volume = {21},
-   year = {2009},
-}
 @generic{Fabry2014,
    abstract = {This review provides an overview of recent developments in the area of continuous flow process optimization by employing self-optimizing reactor systems. Although only few reactor concepts have been realized to date, impressive progress has been made, which now allows fully automated reaction optimization without the need of human interactions.},
    author = {David C. Fabry and Erli Sugiono and Magnus Rueping},
@@ -377,21 +352,22 @@
    volume = {14},
    year = {2019},
 }
-@article{Houben2015,
-   abstract = {Self-optimization of chemical reactions enables faster optimization of reaction conditions or discovery of molecules with required target properties. The technology of self-optimization has been expanded to discovery of new process recipes for manufacture of complex functional products. A new machine-learning algorithm, specifically designed for multiobjective target optimization with an explicit aim to minimize the number of ?expensive? experiments, guides the discovery process. This ?black-box? approach assumes no a priori knowledge of chemical system and hence particularly suited to rapid development of processes to manufacture specialist low-volume, high-value products. The approach was demonstrated in discovery of process recipes for a semibatch emulsion copolymerization, targeting a specific particle size and full conversion.\nSelf-optimization of chemical reactions enables faster optimization of reaction conditions or discovery of molecules with required target properties. The technology of self-optimization has been expanded to discovery of new process recipes for manufacture of complex functional products. A new machine-learning algorithm, specifically designed for multiobjective target optimization with an explicit aim to minimize the number of ?expensive? experiments, guides the discovery process. This ?black-box? approach assumes no a priori knowledge of chemical system and hence particularly suited to rapid development of processes to manufacture specialist low-volume, high-value products. The approach was demonstrated in discovery of process recipes for a semibatch emulsion copolymerization, targeting a specific particle size and full conversion.},
+@article{Houben2015a,
+   title = {Closed-Loop Multitarget Optimization for Discovery of New Emulsion Polymerization Recipes},
    author = {Claudia Houben and Nicolai Peremezhney and Alexandr Zubov and Juraj Kosek and Alexei A. Lapkin},
-   doi = {10.1021/acs.oprd.5b00210},
+   abstract = {Self-optimization of chemical reactions enables faster optimization of reaction conditions or discovery of molecules with required target properties. The technology of self-optimization has been expanded to discovery of new process recipes for manufacture of complex functional products. A new machine-learning algorithm, specifically designed for multiobjective target optimization with an explicit aim to minimize the number of ?expensive? experiments, guides the discovery process. This ?black-box? approach assumes no a priori knowledge of chemical system and hence particularly suited to rapid development of processes to manufacture specialist low-volume, high-value products. The approach was demonstrated in discovery of process recipes for a semibatch emulsion copolymerization, targeting a specific particle size and full conversion.\nSelf-optimization of chemical reactions enables faster optimization of reaction conditions or discovery of molecules with required target properties. The technology of self-optimization has been expanded to discovery of new process recipes for manufacture of complex functional products. A new machine-learning algorithm, specifically designed for multiobjective target optimization with an explicit aim to minimize the number of ?expensive? experiments, guides the discovery process. This ?black-box? approach assumes no a priori knowledge of chemical system and hence particularly suited to rapid development of processes to manufacture specialist low-volume, high-value products. The approach was demonstrated in discovery of process recipes for a semibatch emulsion copolymerization, targeting a specific particle size and full conversion.},
+   journal = {Organic Process Research and Development},
+   publisher = {American Chemical Society},
    issn = {1520586X},
    issue = {8},
-   journal = {Organic Process Research and Development},
    month = {3},
    pages = {1049-1053},
-   publisher = {American Chemical Society},
-   title = {Closed-Loop Multitarget Optimization for Discovery of New Emulsion Polymerization Recipes},
    volume = {19},
    year = {2015},
+   doi = {10.1021/acs.oprd.5b00210},
 }
-@generic{Houben2015,
+@generic{Houben2015b,
+   title = {Automatic discovery and optimization of chemical processes},
    abstract = {This paper presents the first overview of recent developments in techniques and methods that enable closed-loop optimization, also sometimes called 'self optimization', as well as discovery in different areas of molecular sciences. The closed-loop experimental platforms offer tremendous new opportunities by significantly increasing productivity, as well as enabling completely new types of experiments to be performed. Such experiments involve three main enabling technology areas: automated experimental systems, analytical instruments connected to automated chemoinformatics software and optimization or decision-making algorithms. We review the most exciting developments concerning robotic experiments, 3D printed lab-ware, experimental systems with multiple analytical instruments and advanced optimization algorithms based on machine learning approaches. A range of different chemical problems is described, which show the breadth of potential applications of this emerging experimental approach.},
    author = {Claudia Houben and Alexei A. Lapkin},
    doi = {10.1016/j.coche.2015.07.001},
@@ -400,7 +376,6 @@
    month = {7},
    pages = {1-7},
    publisher = {Elsevier Ltd},
-   title = {Automatic discovery and optimization of chemical processes},
    volume = {9},
    year = {2015},
 }
@@ -504,7 +479,8 @@
    volume = {29},
    year = {2017},
 }
-@inproceedings{Wang2017,
+@inproceedings{Wang2017a,
+   title = {Time series classification from scratch with deep neural networks: A strong baseline},
    abstract = {We propose a simple but strong baseline for time series classification from scratch with deep neural networks. Our proposed baseline models are pure end-to-end without any heavy preprocessing on the raw data or feature crafting. The proposed Fully Convolutional Network (FCN) achieves premium performance to other state-of-the-art approaches and our exploration of the very deep neural networks with the ResNet structure is also competitive. The global average pooling in our convolutional model enables the exploitation of the Class Activation Map (CAM) to find out the contributing region in the raw data for the specific labels. Our models provides a simple choice for the real world application and a good starting point for the future research. An overall analysis is provided to discuss the generalization capability of our models, learned features, network structures and the classification semantics.},
    author = {Zhiguang Wang and Weizhong Yan and Tim Oates},
    doi = {10.1109/IJCNN.2017.7966039},
@@ -513,17 +489,8 @@
    month = {6},
    pages = {1578-1585},
    publisher = {Institute of Electrical and Electronics Engineers Inc.},
-   title = {Time series classification from scratch with deep neural networks: A strong baseline},
    volume = {2017-May},
    year = {2017},
-}
-@article{Wang2015,
-   abstract = {Recently, there has been rising interest in Bayesian optimization -- the optimization of an unknown function with assumptions usually expressed by a Gaussian Process (GP) prior. We study an optimization strategy that directly uses an estimate of the argmax of the function. This strategy offers both practical and theoretical advantages: no tradeoff parameter needs to be selected, and, moreover, we establish close connections to the popular GP-UCB and GP-PI strategies. Our approach can be understood as automatically and adaptively trading off exploration and exploitation in GP-UCB and GP-PI. We illustrate the effects of this adaptive tuning via bounds on the regret as well as an extensive empirical evaluation on robotics and vision tasks, demonstrating the robustness of this strategy for a range of performance criteria.},
-   author = {Zi Wang and Bolei Zhou and Stefanie Jegelka},
-   month = {10},
-   title = {Optimization as Estimation with Gaussian Processes in Bandit Settings},
-   url = {http://arxiv.org/abs/1510.06423},
-   year = {2015},
 }
 @article{Wilson2018,
    abstract = {Bayesian optimization is a sample-efficient approach to global optimization that relies on theoretically motivated value heuristics (acquisition functions) to guide its search process. Fully maximizing acquisition functions produces the Bayes' decision rule, but this ideal is difficult to achieve since these functions are frequently non-trivial to optimize. This statement is especially true when evaluating queries in parallel, where acquisition functions are routinely non-convex, high-dimensional, and intractable. We first show that acquisition functions estimated via Monte Carlo integration are consistently amenable to gradient-based optimization. Subsequently, we identify a common family of acquisition functions, including EI and UCB, whose properties not only facilitate but justify use of greedy approaches for their maximization.},
@@ -625,8 +592,9 @@
    year = {2017},
 }
 @generic{Shahriari2016,
-   abstract = {—Big data applications are typically associated with systems involving large numbers of users, massive complex software systems, and large-scale heterogeneous computing and storage architectures. The construction of such systems involves many distributed design choices. The end products (e.g., rec-ommendation systems, medical analysis tools, real-time game engines, speech recognizers) thus involves many tunable config-uration parameters. These parameters are often specified and hard-coded into the software by various developers or teams. If optimized jointly, these parameters can result in significant improvements. Bayesian optimization is a powerful tool for the joint optimization of design choices that is gaining great popularity in recent years. It promises greater automation so as to increase both product quality and human productivity. This review paper introduces Bayesian optimization, highlights some of its methodological aspects, and showcases a wide range of applications.},
+   title = {Taking the human out of the loop: A review of Bayesian optimization},
    author = {Bobak Shahriari and Kevin Swersky and Ziyu Wang and Ryan P. Adams and Nando De Freitas},
+   abstract = {Big data applications are typically associated with systems involving large numbers of users, massive complex software systems, and large-scale heterogeneous computing and storage architectures. The construction of such systems involves many distributed design choices. The end products (e.g., rec-ommendation systems, medical analysis tools, real-time game engines, speech recognizers) thus involves many tunable config-uration parameters. These parameters are often specified and hard-coded into the software by various developers or teams. If optimized jointly, these parameters can result in significant improvements. Bayesian optimization is a powerful tool for the joint optimization of design choices that is gaining great popularity in recent years. It promises greater automation so as to increase both product quality and human productivity. This review paper introduces Bayesian optimization, highlights some of its methodological aspects, and showcases a wide range of applications.},
    doi = {10.1109/JPROC.2015.2494218},
    issn = {00189219},
    issue = {1},
@@ -635,7 +603,6 @@
    month = {1},
    pages = {148-175},
    publisher = {Institute of Electrical and Electronics Engineers Inc.},
-   title = {Taking the human out of the loop: A review of Bayesian optimization},
    volume = {104},
    year = {2016},
 }
@@ -742,7 +709,7 @@
    title = {Predictive Entropy Search for Bayesian Optimization with Unknown Constraints},
    year = {2015},
 }
-@article{Wang2017,
+@article{Wang2017b,
    abstract = {Entropy Search (ES) and Predictive Entropy Search (PES) are popular and empirically successful Bayesian Optimization techniques. Both rely on a compelling information-theoretic motivation, and maximize the information gained about the $\arg\max$ of the unknown function; yet, both are plagued by the expensive computation for estimating entropies. We propose a new criterion, Max-value Entropy Search (MES), that instead uses the information about the maximum function value. We show relations of MES to other Bayesian optimization methods, and establish a regret bound. We observe that MES maintains or improves the good empirical performance of ES/PES, while tremendously lightening the computational burden. In particular, MES is much more robust to the number of samples used for computing the entropy, and hence more efficient for higher dimensional problems.},
    author = {Zi Wang and Stefanie Jegelka},
    title = {Max-value Entropy Search for Efficient Bayesian Optimization},
@@ -829,14 +796,6 @@
    url = {https://arxiv.org/abs/1903.06694},
    year = {2019},
 }
-@article{Qin2017,
-   abstract = {The expected improvement (EI) algorithm is a popular strategy for information collection in optimization under uncertainty. The algorithm is widely known to be too greedy, but nevertheless enjoys wide use due to its simplicity and ability to handle uncertainty and noise in a coherent decision theoretic framework. To provide rigorous insight into EI, we study its properties in a simple setting of Bayesian optimization where the domain consists of a finite grid of points. This is the so-called best-arm identification problem, where the goal is to allocate measurement effort wisely to confidently identify the best arm using a small number of measurements. In this framework, one can show formally that EI is far from optimal. To overcome this shortcoming, we introduce a simple modification of the expected improvement algorithm. Surprisingly, this simple change results in an algorithm that is asymptotically optimal for Gaussian best-arm identification problems, and provably outperforms standard EI by an order of magnitude.},
-   author = {Chao Qin and Diego Klabjan and Daniel Russo},
-   month = {5},
-   title = {Improving the Expected Improvement Algorithm},
-   url = {http://arxiv.org/abs/1705.10033},
-   year = {2017},
-}
 @article{Zhao2018,
    abstract = {In multi-objective Bayesian optimization and surrogate-based evolutionary algorithms, Expected HyperVolume Improvement (EHVI) is widely used as the acquisition function to guide the search approaching the Pareto front. This paper focuses on the exact calculation of EHVI given a nondominated set, for which the existing exact algorithms are complex and can be inefficient for problems with more than three objectives. Integrating with different decomposition algorithms, we propose a new method for calculating the integral in each decomposed high-dimensional box in constant time. We develop three new exact EHVI calculation algorithms based on three region decomposition methods. The first grid-based algorithm has a complexity of $O(m\cdot n^m)$ with $n$ denoting the size of the nondominated set and $m$ the number of objectives. The Walking Fish Group (WFG)-based algorithm has a worst-case complexity of $O(m\cdot 2^n)$ but has a better average performance. These two can be applied for problems with any $m$. The third CLM-based algorithm is only for $m=3$ and asymptotically optimal with complexity $\Theta(n\log\{n\})$. Performance comparison results show that all our three algorithms are at least twice faster than the state-of-the-art algorithms with the same decomposition methods. When $m>3$, our WFG-based algorithm can be over $10^2$ faster than the corresponding existing algorithms. Our algorithm is demonstrated in an example involving efficient multi-objective material design with Bayesian optimization.},
    author = {Guang Zhao and Raymundo Arroyave and Xiaoning Qian},
@@ -870,12 +829,12 @@
    title = {BayesOpt: A Bayesian optimization library for nonlinear optimization, experimental design and bandits},
    year = {2015},
 }
-@article{Wang2017,
-   abstract = {Optimization of high-dimensional black-box functions is an extremely challenging problem. While Bayesian optimization has emerged as a popular approach for optimizing black-box functions, its applicability has been limited to low-dimensional problems due to its computational and statistical challenges arising from high-dimensional settings. In this paper, we propose to tackle these challenges by (1) assuming a latent additive structure in the function and inferring it properly for more efficient and effective BO, and (2) performing multiple evaluations in parallel to reduce the number of iterations required by the method. Our novel approach learns the latent structure with Gibbs sampling and constructs batched queries using dctcrminantal point processes. Experimental validations on both synthetic and real-world functions demonstrate that the proposed method outperforms the existing state-of-the-art approaches.},
+@article{Wang2017c,
+   title = {Batched high-dimensional Bayesian optimization via structural kernel learning},
    author = {Zi Wang and Chengtao Li and Stefanie Jegelka and Pushmeet Kohli},
+   abstract = {Optimization of high-dimensional black-box functions is an extremely challenging problem. While Bayesian optimization has emerged as a popular approach for optimizing black-box functions, its applicability has been limited to low-dimensional problems due to its computational and statistical challenges arising from high-dimensional settings. In this paper, we propose to tackle these challenges by (1) assuming a latent additive structure in the function and inferring it properly for more efficient and effective BO, and (2) performing multiple evaluations in parallel to reduce the number of iterations required by the method. Our novel approach learns the latent structure with Gibbs sampling and constructs batched queries using dctcrminantal point processes. Experimental validations on both synthetic and real-world functions demonstrate that the proposed method outperforms the existing state-of-the-art approaches.},
    isbn = {9781510855144},
    journal = {34th International Conference on Machine Learning, ICML 2017},
-   title = {Batched high-dimensional Bayesian optimization via structural kernel learning},
    year = {2017},
 }
 @article{Poscharny2018,
@@ -957,11 +916,11 @@
    archivePrefix={arXiv},
    primaryClass={stat.ML}
 }
-@article{Paria2018,
+@article{Paria2018a,
+   title = {A Flexible Framework for Multi-Objective Bayesian Optimization using Random Scalarizations},
    abstract = {Many real world applications can be framed as multi-objective optimization problems, where we wish to simultaneously optimize for multiple criteria. Bayesian optimization techniques for the multi-objective setting are pertinent when the evaluation of the functions in question are expensive. Traditional methods for multi-objective optimization, both Bayesian and otherwise, are aimed at recovering the Pareto front of these objectives. However, in certain cases a practitioner might desire to identify Pareto optimal points only in a subset of the Pareto front due to external considerations. In this work, we propose a strategy based on random scalarizations of the objectives that addresses this problem. Our approach is able to flexibly sample from desired regions of the Pareto front and, computationally, is considerably cheaper than most approaches for MOO. We also study a notion of regret in the multi-objective setting and show that our strategy achieves sublinear regret. We experiment with both synthetic and real-life problems, and demonstrate superior performance of our proposed algorithm in terms of the flexibility and regret.},
    author = {Biswajit Paria and Kirthevasan Kandasamy and Barnabás Póczos},
    month = {5},
-   title = {A Flexible Framework for Multi-Objective Bayesian Optimization using Random Scalarizations},
    url = {http://arxiv.org/abs/1805.12168},
    year = {2018},
 }
@@ -1204,12 +1163,6 @@
    url = {http://arxiv.org/abs/1712.00424},
    year = {2017},
 }
-@article{Paria2018,
-   author = {Biswajit Paria and Kirthevasan Kandasamy and Barnabás Póczos},
-   journal = {ArXiv},
-   title = {A Flexible Multi-Objective Bayesian Optimization Approach using Random Scalarizations},
-   year = {2018},
-}
 @article{Chang2020,
    abstract = {A major technological challenge in materials research is the large and complex parameter space, which hinders experimental throughput and ultimately slows down development and implementation. In single-walled carbon nanotube (CNT) synthesis, for instance, the poor yield obtained from conventional catalysts is a result of limited understanding of input-to-output correlations. Autonomous closed-loop experimentation combined with advances in machine learning (ML) is uniquely suited for high-throughput research. Among the ML algorithms available, Bayesian optimization (BO) is especially apt for exploration and optimization within such high-dimensional and complex parameter space. BO is an adaptive sequential design algorithm for finding the global optimum of a black-box objective function with the fewest possible measurements. Here, we demonstrate a promising application of BO in CNT synthesis as an efficient and robust algorithm which can (1) improve the growth rate of CNT in the BO-planner experiments over the seed experiments up to a factor 8; (2) rapidly improve its predictive power (or learning); (3) Consistently achieve good performance regardless of the number or origin of seed experiments; (4) exploit a high-dimensional, complex parameter space, and (5) achieve the former 4 tasks in just over 100 hundred experiments (~8 experimental hours) – a factor of 5× faster than our previously reported results.},
    author = {Jorge Chang and Pavel Nikolaev and Jennifer Carpena-Núñez and Rahul Rao and Kevin Decker and Ahmad E. Islam and Jiseob Kim and Mark A. Pitt and Jay I. Myung and Benji Maruyama},
@@ -1224,19 +1177,19 @@
    volume = {10},
    year = {2020},
 }
-@article{Qin2017,
+@article{Qin2017a,
+   title = {Improving the Expected Improvement Algorithm},
    abstract = {The expected improvement (EI) algorithm is a popular strategy for information collection in optimization under uncertainty. The algorithm is widely known to be too greedy, but nevertheless enjoys wide use due to its simplicity and ability to handle uncertainty and noise in a coherent decision theoretic framework. To provide rigorous insight into EI, we study its properties in a simple setting of Bayesian optimization where the domain consists of a finite grid of points. This is the so-called best-arm identification problem, where the goal is to allocate measurement effort wisely to confidently identify the best arm using a small number of measurements. In this framework, one can show formally that EI is far from optimal. To overcome this shortcoming, we introduce a simple modification of the expected improvement algorithm. Surprisingly, this simple change results in an algorithm that is asymptotically optimal for Gaussian best-arm identification problems, and provably outperforms standard EI by an order of magnitude.},
    author = {Chao Qin and Diego Klabjan and Daniel Russo},
    month = {5},
-   title = {Improving the Expected Improvement Algorithm},
    url = {http://arxiv.org/abs/1705.10033},
    year = {2017},
 }
-@article{Wang2015,
+@article{Wang2015a,
+   title = {Optimization as Estimation with Gaussian Processes in Bandit Settings},
    abstract = {Recently, there has been rising interest in Bayesian optimization -- the optimization of an unknown function with assumptions usually expressed by a Gaussian Process (GP) prior. We study an optimization strategy that directly uses an estimate of the argmax of the function. This strategy offers both practical and theoretical advantages: no tradeoff parameter needs to be selected, and, moreover, we establish close connections to the popular GP-UCB and GP-PI strategies. Our approach can be understood as automatically and adaptively trading off exploration and exploitation in GP-UCB and GP-PI. We illustrate the effects of this adaptive tuning via bounds on the regret as well as an extensive empirical evaluation on robotics and vision tasks, demonstrating the robustness of this strategy for a range of performance criteria.},
    author = {Zi Wang and Bolei Zhou and Stefanie Jegelka},
    month = {10},
-   title = {Optimization as Estimation with Gaussian Processes in Bandit Settings},
    url = {http://arxiv.org/abs/1510.06423},
    year = {2015},
 }
@@ -1524,7 +1477,7 @@
    numpages = {30},
    keywords = {hypervolume, Evolutionary multi-objective optimization, performance comparison., reference point}
 }
-@article{Belakaria_2020,
+@article{Belakaria2020,
    title={Uncertainty-Aware Search Framework for Multi-Objective Bayesian Optimization},
    volume={34},
    ISSN={2159-5399},
@@ -1538,7 +1491,7 @@
    month={Apr},
    pages={10044–10052}
 }
-@article{10.1145/3197517.3201385,
+@article{Schulz2018,
    author = {Schulz, Adriana and Wang, Harrison and Grinspun, Eitan and Solomon, Justin and Matusik, Wojciech},
    title = {Interactive Exploration of Design Trade-Offs},
    year = {2018},
@@ -1556,4 +1509,23 @@
    articleno = {131},
    numpages = {14},
    keywords = {design for manufacturing, shape modeling, pareto optimality}
+}
+@inproceedings{Quinlan92,
+    title = {Learning With Continuous Classes},
+    author = {J. R. Quinlan},
+    booktitle = {},
+    year = {1992},
+    pages = {343-348},
+    publisher = {World Scientific},
+    url = {https://sci2s.ugr.es/keel/pdf/algorithm/congreso/1992-Quinlan-AI.pdf}
+}
+@inproceedings{Quinlan93,
+  title = {Combining Instance-Based and Model-Based Learning},
+  author = {J. R. Quinlan},
+  year = {1993},
+  cdate = {725846400000},
+  pages = {236-243},
+  url = {https://doi.org/10.1016/b978-1-55860-307-3.50037-x},
+  booktitle = {ICML},
+  crossref = {conf/icml/1993}
 }
