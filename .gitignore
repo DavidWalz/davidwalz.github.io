@@ -1,3 +1,4 @@
 site
 .envrc
 .cache
+uv.lock
