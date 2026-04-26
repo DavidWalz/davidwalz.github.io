@@ -20,13 +20,13 @@ img[src*="#medium"] {
 /* ---- Hero --------------------------------------------------------------- */
 
 :root {
-  --hero-bg: #07080c;
-  --hero-fg: #f3f4f8;
-  --hero-accent: #7aa2ff;
+  --hero-bg: #000000;
+  --hero-fg: #f7f7f8;
+  --hero-accent: #f1aa3a;
 }
 
 [data-md-color-scheme="slate"] {
-  --hero-bg: #05060a;
+  --hero-bg: #000000;
 }
 
 .md-main__inner {
@@ -36,18 +36,22 @@ img[src*="#medium"] {
 .hero {
   position: relative;
   isolation: isolate;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  min-height: calc(100vh - 3rem);
-  padding: 6rem 1.5rem;
+  margin-right: calc(50% - 50vw);
+  min-height: calc(
+    100dvh - var(--md-header-height, 3rem) - var(--md-tabs-height, 0px)
+  );
+  height: calc(
+    100dvh - var(--md-header-height, 3rem) - var(--md-tabs-height, 0px)
+  );
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 4vw, 3.5rem)
+    clamp(2rem, 7vw, 5rem);
   overflow: hidden;
-  background: radial-gradient(
-      ellipse at 50% 40%,
-      #131826 0%,
-      var(--hero-bg) 70%
-    );
+  background: var(--hero-bg);
   color: var(--hero-fg);
 }
 
@@ -61,9 +65,11 @@ img[src*="#medium"] {
 }
 
 .hero__content {
-  max-width: 38rem;
-  text-align: center;
+  max-width: min(38rem, 90vw);
+  text-align: left;
   text-shadow: 0 1px 24px rgba(0, 0, 0, 0.65);
+  position: relative;
+  z-index: 1;
 }
 
 .hero__eyebrow {
@@ -77,21 +83,18 @@ img[src*="#medium"] {
 
 .hero__content h1 {
   margin: 0 0 1rem;
-  font-size: clamp(2.6rem, 7.5vw, 5rem);
+  font-size: clamp(2.5rem, 6.6vw, 4.6rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.05;
-  background: linear-gradient(180deg, #ffffff 30%, #9ab0ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
 }
 
 .hero__content p {
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  line-height: 1.5;
   color: #cfd4e0;
-  margin: 0 auto 1.75rem;
+  margin: 0 0 1.75rem;
 }
 
 .hero__content a.md-button {
@@ -99,13 +102,13 @@ img[src*="#medium"] {
   border-color: rgba(255, 255, 255, 0.25);
   color: var(--hero-fg);
   backdrop-filter: blur(6px);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .hero__content a.md-button--primary {
   background: var(--hero-accent);
   border-color: var(--hero-accent);
-  color: #07080c;
+  color: #111111;
 }
 
 .hero__content a.md-button:hover {
@@ -114,9 +117,9 @@ img[src*="#medium"] {
 }
 
 .hero__content a.md-button--primary:hover {
-  background: #9ab8ff;
-  border-color: #9ab8ff;
-  color: #07080c;
+  background: #f6bf63;
+  border-color: #f6bf63;
+  color: #111111;
 }
 
 /* ---- Cards -------------------------------------------------------------- */

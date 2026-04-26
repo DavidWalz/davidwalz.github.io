@@ -1,6 +1,6 @@
 # Cubist
 
-Cubist is an algorithm for building rule-based regression models, developed by John Ross Quinlain in the early 90s [@Quinlan92, @Quinlan93] (sorry, references are not working in mkdocs-jupyter yet).
+Cubist is an algorithm for building rule-based regression models, developed by John Ross Quinlain in the early 90s [@Quinlan92, @Quinlan93].
 You can think of a Cubist model as a regression tree, where each leaf is multivariate linear model.
 Each path through the tree represents a rule and whenever a situation (a new datapoint) matches a rule, the associated model is used to calculate the predicted value.
 It's important to note that the rules are non-exclusive, meaning a single prediction can be composed of the application of multiple rules.
@@ -360,8 +360,5 @@ print("Model:", model.model_)
     coeff="1" att="var0" coeff="0.1"
     
 
-
 The package is certainly nice already in this early stage.
 For now, I'm a little bit disappointed by the oddities in the Cubist algorithm, but I might well change my mind.
-
-\bibliography

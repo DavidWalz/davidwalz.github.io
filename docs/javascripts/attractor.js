@@ -14,6 +14,74 @@
 (function () {
   "use strict";
 
+  function setBodyPalette(color) {
+    if (!color) return;
+    for (var key in color) {
+      if (Object.prototype.hasOwnProperty.call(color, key) && color[key] != null) {
+        document.body.setAttribute("data-md-color-" + key, color[key]);
+      }
+    }
+  }
+
+  function getStoredPalette() {
+    try {
+      if (typeof window.__md_get === "function") {
+        return window.__md_get("__palette");
+      }
+      // Fallback when helper is unavailable.
+      var scope = new URL(".", window.location).pathname;
+      var raw = localStorage.getItem(scope + ".__palette");
+      return raw ? JSON.parse(raw) : null;
+    } catch (_err) {
+      return null;
+    }
+  }
+
+  function restoreNativePalette() {
+    var palette = getStoredPalette();
+    if (palette && palette.color) {
+      // Mirror theme startup behavior for media-driven palettes.
+      if (palette.color.media === "(prefers-color-scheme)") {
+        var media = window.matchMedia("(prefers-color-scheme: light)");
+        var selector = media.matches
+          ? "[data-md-color-media='(prefers-color-scheme: light)']"
+          : "[data-md-color-media='(prefers-color-scheme: dark)']";
+        var input = document.querySelector(selector);
+        if (input) {
+          palette.color.media = input.getAttribute("data-md-color-media");
+          palette.color.scheme = input.getAttribute("data-md-color-scheme");
+          palette.color.primary = input.getAttribute("data-md-color-primary");
+          palette.color.accent = input.getAttribute("data-md-color-accent");
+        }
+      }
+      setBodyPalette(palette.color);
+      return;
+    }
+
+    // No stored palette: fall back to declared default option.
+    var defaultInput = document.querySelector("[data-md-color-scheme='default']");
+    if (defaultInput) {
+      setBodyPalette({
+        media: defaultInput.getAttribute("data-md-color-media") || "none",
+        scheme: defaultInput.getAttribute("data-md-color-scheme") || "default",
+        primary: defaultInput.getAttribute("data-md-color-primary"),
+        accent: defaultInput.getAttribute("data-md-color-accent")
+      });
+    } else {
+      document.body.setAttribute("data-md-color-scheme", "default");
+    }
+  }
+
+  function applyHomeColorScheme() {
+    var path = window.location.pathname || "/";
+    var isHome = path === "/" || path.endsWith("/index.html");
+    if (isHome) {
+      document.body.setAttribute("data-md-color-scheme", "slate");
+      return;
+    }
+    restoreNativePalette();
+  }
+
   var SYSTEMS = {
     "inference-landscape": {
       kind: "custom",
@@ -184,6 +252,7 @@
 
   var teardowns = [];
   function boot() {
+    applyHomeColorScheme();
     while (teardowns.length) teardowns.pop()();
     var canvases = document.querySelectorAll("[data-visual-system]");
     for (var index = 0; index < canvases.length; index++) {

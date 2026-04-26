@@ -10,10 +10,9 @@ copyright = """
 Copyright &copy; 2020-2026 David Walz
 """
 
-# Explicit nav for top-level landing content. Historical posts were converted
-# from notebooks to Markdown under docs/posts/ and are linked from index.md.
 nav = [
-  { "About" = "index.md" },
+  { "Home" = "index.md" },
+  { "Posts" = "posts" },
 ]
 
 extra_css = ["stylesheets/extra.css"]
@@ -43,6 +42,7 @@ features = [
   "navigation.instant.prefetch",
   "navigation.path",
   "navigation.sections",
+  "navigation.tabs",
   "navigation.top",
   "navigation.tracking",
   "search.highlight",
