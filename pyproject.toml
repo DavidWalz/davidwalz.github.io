@@ -1,0 +1,9 @@
+[project]
+name = "davidwalz-github-io"
+version = "0.1.0"
+description = "Personal GitHub Pages site"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "zensical>=0.0.36",
+]

@@ -6,7 +6,7 @@ That's why I have decided to switch over to mkdocs / mkdocs-material which I'm a
 
 Through [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter) I'll be able to keep the existing posts in `.ipynb` format. 
 
-With [mkdocs-bibtex](https://github.com/shyamd/mkdocs-bibtex/) I will be able to keep the current bibliograpy, but will have to modify the citation style from `{% cite XYZ %}` to `[@XYZ]`.
+With [mkdocs-bibtex](https://github.com/shyamd/mkdocs-bibtex/) I will be able to keep the current bibliograpy, but will have to modify the citation style from `[XYZ]` to `[@XYZ]`.
 See [@Schulz2018] for an example.
 This works in markdown files, but not in jupyter notebooks.#
 Let's see what can be done here short of switching from mkdocs to jupyter-book.

@@ -1,2 +1,2 @@
 # Github Page
-Github page using mkdocs-material.
+Github page using zensical.
