@@ -2,6 +2,10 @@
 title: Posts
 ---
 
+## 2026
+
+- [Zensical](2026/zensical.md)
+
 ## 2021
 
 - [Cubist](2021/cubist.md)
